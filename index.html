@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists the Last Transactions</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="grid grid-cols-5 gap-3">
+    <!-- grid-cols-2 w-1/5 divide-x -->
+    <div class="relative h-full w-full bg-cyan-600">
+      <div>
+
+        <div class="flex space-x-2 justify-center h-full">
+          <a href="#"
+            class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 text-center -m-">home
+            <!-- <p class="text-center ">Home</p> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 -m-5 pl-">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="flex space-x-2 justify-center ">
+          <a href="#"
+            class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 text-center">History
+            <!-- <p class="text-center ">Home</p> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 -m-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+
+          </a>
+        </div>
+
+        <div class="flex space-x-2 justify-center ">
+          <a href="#"
+            class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 text-center">Balances
+            <!-- <p class="text-center ">Home</p> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 -m-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
+            </svg>
+
+          </a>
+        </div>
+
+        <div class="flex space-x-2 justify-center ">
+          <a href="#"
+            class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 h- text-center">Cards
+            <!-- <p class="text-center ">Home</p> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 -m-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+            </svg>
+
+          </a>
+        </div>
+
+        <div class="flex space-x-2 justify-center ">
+          <a href="#"
+            class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 h- text-center">Recipients
+            <!-- <p class="text-center ">Home</p> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 -m-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+
+          </a>
+        </div>
+
+        <div class="flex space-x-2 justify-center ">
+          <a href="#"
+            class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 h- text-center mb-8">Reports
+            <!-- <p class="text-center ">Home</p> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 -m-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+            </svg>
+
+          </a>
+        </div>
+
+        <div class="border-t-4 border-cyan-900">
+          <div class="flex space-x-2 justify-center ">
+            <a href="#"
+              class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 h- text-center">Settings
+              <!-- <p class="text-center ">Home</p> -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 -m-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+
+
+            </a>
+          </div>
+
+          <div class="flex space-x-2 justify-center ">
+            <a href="#"
+              class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 h- text-center">Help
+              <!-- <p class="text-center ">Home</p> -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 -m-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+              </svg>
+
+            </a>
+          </div>
+
+          <div class="flex space-x-2 justify-center ">
+            <a href="#"
+              class="inline-block px-6 py-4 bg-teal-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-teal-900 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-4 w-52 h- text-center">Privacy
+              <!-- <p class="text-center ">Home</p> -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 -m-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+
+            </a>
+          </div>
+        </div>
+      </div>
+     
+
+
+
+    </div>
+    <div class="col-span-4">
+      <div>
+        <!-- search box -->
+        <label class="relative block pl-4 pt-4 pr-60">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+          </span>
+          <input
+            class="placeholder:italic placeholder:text-slate-400 block bg-white w-11/12 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+            placeholder="Search for anything..." type="text" name="search" />
+
+        </label>
+      </div>
+      <!--   -->
+      <div>
+
+        <form class="relative flex items-center space-x-32 h-32 -m-10 mr-64 ">
+          <img class="absolute top-0 right-0 h-12 w-12  object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80">
+
+      </div>
+      <div class="absolute top-0 right-0 pr-32 pt-4 text-xl ">
+        <span>ABCDEFGH</span>
+        
+        <div class="pl-36 -m-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+      </div>
+      </div>
+      <!-- photo -->
+      <div>
+        <form class="flex items-center space-x-32 h-32 ">
+          <img class="h-16 w-16 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80">
+        </form>
+      </div>
+      <div>
+        <p class="font-sans md:Roboto text-4xl antialiased pl-40 -m-16 text-cyan-600">Hello ABCDEFGH</p>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-24 mt-20">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /> 
+          </svg>
+          <p class="pl-40 -m-6 text-gray-600 font-semibold">Duke Street studio</p>
+        </div>
+
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 fill-green-400 ml-80">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <p class="pl-96 -m-6 text-gray-600 font-semibold">Verified Account</p>
+          
+        </div>
+      </div>
+
+      <!-- butons -->
+      <div class="flex space-x-2 justify-end pr-10 pt-6">
+        <div>
+          <button type="button"
+            class="inline-block px-10 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Add
+            Money</button>
+        </div>
+        <div>
+          <button type="button"
+            class="inline-block px-10 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out">Send
+            Money</button>
+        </div>
+      </div>
+
+<!--  -->
+
+<div class="mt-11 w-full h-full bg-slate-100 pl-3">
+      <div class="pl-10 pt-12 text-2xl font-semibold font-sans ui-sans-serif">
+        <p> Overview </p>
+      </div>
+
+      <!--  -->
+
+      <div class="flex flex-row col-span-3 gap-6 pl-5 pt-4 ">
+
+        <div
+          class="border-solid rounded-lg border-2 shadow-2xl w-96 h-48 pt-4 text-xl text-center divide-y divide-solid flex flex-col">
+          Account Balance
+          <div>
+            <div class="pl-28  text-center">
+              <a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-9 h-9 pl-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <p class="-m-9">29,999</p>
+            </div>
+          </div>
+
+          <div class="mt-16 bg-slate-300">
+            <p href="#" class=" text-left ml-8 py-8 text-sky-700">View All</p>
+          </div>
+        </div>
+
+        <!--  -->
+        <div
+          class="border-solid rounded-lg border-2 shadow-2xl w-96 h-48 pt-4 text-xl text-center divide-y divide-solid flex flex-col">
+          Pending
+          <div>
+            <div class="pl-28  text-center">
+              <a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-9 h-9 pl-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <p class="-m-9">-10,995</p>
+            </div>
+          </div>
+
+          <div class="mt-16 bg-slate-300">
+            <p href="#" class=" text-left ml-8 py-8 text-sky-700">View All</p>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div
+          class="border-solid rounded-lg border-2 shadow-2xl w-96 h-48 pt-4 text-xl text-center divide-y divide-solid flex flex-col">
+          Processed (last 30
+          days)
+          <div>
+            <div class="pl-28  text-center">
+              <a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-9 h-9 pl-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <p class="-m-9">15,000</p>
+            </div>
+          </div>
+
+          <div class="mt-16 bg-slate-300">
+            <p href="#" class=" text-left ml-8 py-8 text-sky-700">View All</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--  -->
+
+      <div>
+        <div>
+          <p class="text-3xl font-medium pt-10">Recent Activity </p>
+        </div>
+        <!--  -->
+
+        <div class=" pt-4">
+
+
+          <div class="relative overflow-x-auto">
+            <table class="w-11/12 text-xl text-left bg-slate-300 dark:text-gray-800">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-500 dark:bg-gray-700 dark:text-stone-200">
+                <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Transaction
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Amount
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Status
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Date
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-gray-500 border-b dark:bg-gray-300 dark:border-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-stone-600">
+                    Payment to ABC
+                  </th>
+                  <td class="px-6 py-4">
+                    $15,000
+                  </td>
+                  <td
+                    class="mt-3 px-3 py-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">
+                    success
+                  </td>
+                  <td class="px-6 py-4">
+                    July 11,2020
+                  </td>
+                </tr>
+                <tr class="bg-gray-300 border-b dark:bg-slate-400 dark:border-gray-z00">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-stone-600">
+                    Payment to DEF
+                  </th>
+                  <td class="px-6 py-4">
+                    $ 20,000
+                  </td>
+                  <td
+                    class="mt-3 px-3 py-2 inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out">
+                    Failed
+
+                  </td>
+                  <td class="px-6 py-4">
+                    Aug 15,2020
+                  </td>
+                </tr>
+                <tr class="bg-gray-500 border-b dark:bg-gray-300 dark:border-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-stone-600">
+                    Payment to GHI
+                  </th>
+                  <td class="px-6 py-4">
+                    $ 20,000
+                  </td>
+                  <td
+                    class="mt-3 px-3 py-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">
+                    success
+
+                  </td>
+                  <td class="px-6 py-4">
+                    July 11,2020
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
